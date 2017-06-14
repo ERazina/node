@@ -35,7 +35,7 @@
 
 
 
-//вариант Лизы
+//вариант Лизы - работает
 var http = require('http');
 
 var server = new http.Server();
