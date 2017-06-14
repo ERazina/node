@@ -1,4 +1,4 @@
-var 'express' = require ('express');''
+var express = require ('express');
 var app = express();
 
 //сначала node 6.js
@@ -8,6 +8,6 @@ var app = express();
 
 
 app.use(express.static('public'));
-app.listen(5300, function('Example'){
+app.listen(5300, function('index'){
 	console.log();
 });

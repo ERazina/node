@@ -1,15 +1,13 @@
 //здесь ошибка в 
-var 'express' = require ('express');''
+var express = require ('express');''
 var app = express();
 var data = require('./data.json');
 
 app.get('/records', function(req, res){
 	
-	var filter = req.query.filter
-
-
+	var filter = req.query.filter;
 	subdata  = data.filter(function(item){
-return item.age == filter;
+		return item.age == filter;
 	};
 
 	var subdata = [];
