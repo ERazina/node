@@ -36,6 +36,9 @@ app.get('/records', function(req, res){
   res.send(subdata);
 });
 
+
+//запрос localhost:5300?filter=Alex
+
   // var subdata = [];
   // for (var i=0; i<data.length; i++){}
   // if (data[i].date==filter){
