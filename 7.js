@@ -37,7 +37,7 @@ app.get('/records', function(req, res){
 });
 
 
-//запрос localhost:5300?filter=Alex
+//запрос http://localhost:5300/records?filter=Alex
 
   // var subdata = [];
   // for (var i=0; i<data.length; i++){}
