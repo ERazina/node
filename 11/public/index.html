@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Echo</title>
+<!--   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css"/> -->
+  <!-- <script src="libs/jquery/jquery.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+</head>
+<body class="container">
+  <h1>Эхо-сервер</h1>
+  <form>
+    <input id="m" name="message">
+    <button>Send</button>
+  </form>
+  
+  <script>
+  $(function () {
+    var socket = io();
+    $('form').submit(function(){
+      socket.emit('chat message', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+  });
+</script>
+
+</body>
+</html>

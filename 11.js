@@ -5,7 +5,7 @@
 //дописать html
 
 // в консоли socket.message('client-message, 'sklkdjdkaskjdlkj') - отобразится message
-const 'express' = require('express');
+const express = require('express');
 var app  = express();
 app.use(express.static(__dirname + '/public'));
 
